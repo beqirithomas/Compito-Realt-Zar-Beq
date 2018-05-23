@@ -1,12 +1,12 @@
 
 * {
-    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
 }
 
 body {
-    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
-    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
-    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    -webkit-touch-callout: none;               
+    -webkit-text-size-adjust: none;         
+    -webkit-user-select: none;                 
     background-color:#E4E4E4;
     background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
     background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
@@ -27,32 +27,39 @@ body {
     text-transform:uppercase;
     width:100%;
 }
-/* Portrait layout (default) */
 .app {
-    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
-    position:absolute;             /* position in the center of the screen */
+    background:url(../img/logo.png) no-repeat center top;
+    position:absolute;          
     left:50%;
     top:50%;
-    height:50px;                   /* text area height */
-    width:225px;                   /* text area width */
+    height:50px;                  
+    width:225px;                 
     text-align:center;
-    padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
-    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
-                                   /* offset horizontal: half of text area width */
+    padding:180px 0px 0px 0px; 
+    margin:-115px 0px 0px -112px;
 }
 
-/* Landscape layout (with min-width) */
+.apps {
+    position:absolute;          
+    left:50%;
+    top:50%;
+    height:50px;                  
+    width:225px;                 
+    text-align:center;
+    margin:-115px 0px 0px -112px; 
+}
+
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
     .app {
         background-position:left center;
-        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
-        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
-                                      /* offset horizontal: half of image width and text area width */
+        padding:75px 0px 75px 170px;  
+        margin:-90px 0px 0px -198px;  
     }
 }
 
+
 h1 {
-    font-size:24px;
+    font-size:40px;
     font-weight:normal;
     margin:0px;
     overflow:visible;
@@ -64,18 +71,24 @@ h1 {
     border-radius:4px;
     -webkit-border-radius:4px;
     color:#FFFFFF;
-    font-size:12px;
+    font-size:15px;
     margin:0px 30px;
     padding:2px 0px;
 }
 
-
+.container {
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-right: auto;
+    margin-left: auto;
+	}
+	
 .linkback {
     background-color:#E01F25;
 	border-radius:4px;
     -webkit-border-radius:4px;
     color:#FFFFFF;
-    font-size:12px;
+    font-size:15px;
     margin:0px 30px;
     padding:2px 0px;
 }
@@ -86,7 +99,7 @@ h1 {
 	border-radius:4px;
     -webkit-border-radius:4px;
     color:#FFFFFF;
-    font-size:12px;
+    font-size:15px;
     margin:0px 30px;
     padding:2px 0px;
 }
@@ -109,8 +122,22 @@ h1 {
 }
 
 .enjoy {
-    position:absolute;           
+	background-position:left center;
+    padding:75px 0px 75px 170px;
+    margin:-90px 0px 0px -198px;
+	font-size:15px;
+	position:center;
     left:50%;
     top:50%;                 
     text-align:center;
+}
+
+.title {
+	background-color:#E01F25;
+	border-radius:4px;
+    -webkit-border-radius:4px;
+    color:#FFFFFF;
+    font-size:15px;
+    margin:0px 30px;
+    padding:2px 0px;
 }
