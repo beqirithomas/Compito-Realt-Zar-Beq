@@ -25,8 +25,8 @@
 						{
 							var min = document.myForm.da.value;
 							var max = document.myForm.a.value;
-							var x = document.getElementById("demo");
-							x.innerHTML = "Oggi per te un offerta speciale sul nostro articolo n°" + Math.floor(Math.random() * (max - min) + 1);
+							var y = parseInt(Math.floor(Math.random()*(max - min)) + parseInt(min));
+							x.innerHTML = "Oggi per te un offerta speciale sul nostro articolo n°" + y;	
 						}
 				</script>
 				<p class="linkback"><a href="index.html"> Back </a></p> <br>
