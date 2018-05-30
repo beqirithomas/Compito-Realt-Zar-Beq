@@ -22,11 +22,13 @@
 				
 				<script>
 						function Carica() 
-							{	
+							{
 								var min = localStorage.getItem("dal");
 								var max = localStorage.getItem("al");
 								document.getElementById("da").value = min
 								document.getElementById("a").value = max
+								if (min == localStorage.getItem("dal")) {document.getElementById("da").innerHTML = 1; }
+								if (min == localStorage.getItem("al")) {document.getElementById("a").innerHTML = 10; }
 							}
 						function Random() 
 							{
@@ -49,4 +51,3 @@
 			</script>
 	</body>
 </html>
-
